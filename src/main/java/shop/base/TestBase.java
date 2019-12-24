@@ -26,7 +26,7 @@ public class TestBase {
     }
 
     public static void initialization(String url) {
-        var browser = properties.getProperty("browser");
+        String browser = properties.getProperty("browser");
         switch (browser.toLowerCase()) {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
